@@ -1,0 +1,79 @@
+
+application {
+  config {
+    baseName macavi
+    applicationType monolith
+    packageName com.macavi
+    authenticationType jwt
+    devDatabaseType postgresql
+    prodDatabaseType postgresql
+    cacheProvider no
+    buildTool maven
+    clientFramework react
+    enableTranslation true
+    nativeLanguage es
+    languages [en,es]
+    websocket false
+    jhiPrefix ejemplo
+    reactive false
+    serverPort 8080
+    searchEngine false
+    clientTheme minty
+    }
+    entities *
+}
+
+enum Pago{
+	COUNTED (contado),
+    CREDIT (credito)
+}
+
+entity Producto{
+	talla Integer required,
+    porcentajeIva Float,
+    marca String required maxlength (20),
+    genero String required maxlength (20),
+    estilo String required maxlength (20),
+    descripcionProducto String required maxlength (100),
+    cantidadProducto Integer required
+}
+
+entity Factura{
+	descripcion String required maxlength (200),
+    fechaFactura ZonedDateTime required,
+    fechaVencimiento ZonedDateTime,
+    tipoPago Pago required,
+    totalFactura Integer required,
+}
+
+entity Cliente{
+	direccion String required maxlength (60),
+	telefono Integer required,
+}
+
+entity Locate{
+	ciudad String required maxlength(75),
+    departamento String required maxlength(75),
+    pais String required maxlength(75)
+}
+
+entity TipoDni{
+	siglasDni String required maxlength(4),
+    nombreDni String required maxlength(50),
+}
+
+entity ProdFact{
+}
+
+relationship OneToMany{
+	Cliente to Factura{Cliente required}
+    Locate to Cliente{Locate required}
+    TipoDni to Cliente{TipoDni required}
+	Factura to ProdFact{Factura required}
+	Producto to ProdFact{Producto required}    
+}
+
+
+dto * with mapstruct
+service * with serviceImpl
+paginate * with pagination

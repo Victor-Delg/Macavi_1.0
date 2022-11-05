@@ -1,0 +1,35 @@
+{
+  "applications": ["macavi"],
+  "changelogDate": "20220430175959",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "tipo_dni",
+  "fields": [
+    {
+      "fieldName": "siglasDni",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "4"
+    },
+    {
+      "fieldName": "nombreDni",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "50"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "TipoDni",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "tipoDni",
+      "relationshipName": "cliente",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceImpl"
+}

@@ -1,0 +1,25 @@
+{
+  "macaviApp": {
+    "prodFact": {
+      "home": {
+        "title": "Prod Facts",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Prod Fact",
+        "createOrEditLabel": "Crear o editar Prod Fact",
+        "notFound": "Ningún Prod Facts encontrado"
+      },
+      "created": "Un nuevo Prod Fact ha sido creado con el identificador {{ param }}",
+      "updated": "Un Prod Fact ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Prod Fact ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Prod Fact {{ id }}?"
+      },
+      "detail": {
+        "title": "Prod Fact"
+      },
+      "id": "ID",
+      "factura": "Factura",
+      "producto": "Producto"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "macaviApp": {
+    "factura": {
+      "home": {
+        "title": "Facturas",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Factura",
+        "createOrEditLabel": "Crear o editar Factura",
+        "notFound": "Ningún Facturas encontrado"
+      },
+      "created": "Un nuevo Factura ha sido creado con el identificador {{ param }}",
+      "updated": "Un Factura ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Factura ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Factura {{ id }}?"
+      },
+      "detail": {
+        "title": "Factura"
+      },
+      "id": "ID",
+      "descripcion": "Descripcion",
+      "fechaFactura": "Fecha Factura",
+      "fechaVencimiento": "Fecha Vencimiento",
+      "tipoPago": "Tipo Pago",
+      "totalFactura": "Total Factura",
+      "prodFact": "Prod Fact",
+      "cliente": "Cliente"
+    }
+  }
+}

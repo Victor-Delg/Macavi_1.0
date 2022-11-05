@@ -1,0 +1,30 @@
+{
+  "applications": ["macavi"],
+  "changelogDate": "20220430180059",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "prod_fact",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ProdFact",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "factura",
+      "otherEntityRelationshipName": "prodFact",
+      "relationshipName": "factura",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityName": "producto",
+      "otherEntityRelationshipName": "prodFact",
+      "relationshipName": "producto",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceImpl"
+}

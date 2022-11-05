@@ -1,0 +1,9 @@
+{
+  "macaviApp": {
+    "Pago": {
+      "null": "",
+      "COUNTED": "contado",
+      "CREDIT": "credito"
+    }
+  }
+}

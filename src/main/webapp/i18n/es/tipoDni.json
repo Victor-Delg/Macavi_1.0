@@ -1,0 +1,26 @@
+{
+  "macaviApp": {
+    "tipoDni": {
+      "home": {
+        "title": "Tipo Dnis",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Tipo Dni",
+        "createOrEditLabel": "Crear o editar Tipo Dni",
+        "notFound": "Ningún Tipo Dnis encontrado"
+      },
+      "created": "Un nuevo Tipo Dni ha sido creado con el identificador {{ param }}",
+      "updated": "Un Tipo Dni ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Tipo Dni ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Tipo Dni {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo Dni"
+      },
+      "id": "ID",
+      "siglasDni": "Siglas Dni",
+      "nombreDni": "Nombre Dni",
+      "cliente": "Cliente"
+    }
+  }
+}

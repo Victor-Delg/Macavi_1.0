@@ -1,0 +1,56 @@
+{
+  "applications": ["macavi"],
+  "changelogDate": "20220430175659",
+  "dto": "mapstruct",
+  "embedded": false,
+  "entityTableName": "factura",
+  "fields": [
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "200"
+    },
+    {
+      "fieldName": "fechaFactura",
+      "fieldType": "ZonedDateTime",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "fechaVencimiento",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "tipoPago",
+      "fieldType": "Pago",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "COUNTED (contado),CREDIT (credito)"
+    },
+    {
+      "fieldName": "totalFactura",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Factura",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "prodFact",
+      "otherEntityRelationshipName": "factura",
+      "relationshipName": "prodFact",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "cliente",
+      "otherEntityRelationshipName": "factura",
+      "relationshipName": "cliente",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "service": "serviceImpl"
+}

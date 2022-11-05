@@ -1,0 +1,26 @@
+{
+  "macaviApp": {
+    "tipoDni": {
+      "home": {
+        "title": "Tipo Dnis",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Tipo Dni",
+        "createOrEditLabel": "Create or edit a Tipo Dni",
+        "notFound": "No Tipo Dnis found"
+      },
+      "created": "A new Tipo Dni is created with identifier {{ param }}",
+      "updated": "A Tipo Dni is updated with identifier {{ param }}",
+      "deleted": "A Tipo Dni is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tipo Dni {{ id }}?"
+      },
+      "detail": {
+        "title": "Tipo Dni"
+      },
+      "id": "ID",
+      "siglasDni": "Siglas Dni",
+      "nombreDni": "Nombre Dni",
+      "cliente": "Cliente"
+    }
+  }
+}

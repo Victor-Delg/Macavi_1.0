@@ -1,0 +1,27 @@
+{
+  "macaviApp": {
+    "locate": {
+      "home": {
+        "title": "Locates",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Locate",
+        "createOrEditLabel": "Crear o editar Locate",
+        "notFound": "Ningún Locates encontrado"
+      },
+      "created": "Un nuevo Locate ha sido creado con el identificador {{ param }}",
+      "updated": "Un Locate ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Locate ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Locate {{ id }}?"
+      },
+      "detail": {
+        "title": "Locate"
+      },
+      "id": "ID",
+      "ciudad": "Ciudad",
+      "departamento": "Departamento",
+      "pais": "Pais",
+      "cliente": "Cliente"
+    }
+  }
+}
